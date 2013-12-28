@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 Список статей
+  ul
+    - each item in items
+      li
+        a(href="#{item.given_url}" title="#{item.excerpt}")= item.given_title
